@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-REX PC Gaming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="mainuser.css">
+    <link rel="stylesheet" href="thongtinkh.css">
+</head>
+
+<body>
+
+    <body>
+
+        <header>
+            <div class="top-bar-container">
+
+                <div class="header-left">
+                    <div class="logo">
+                        <a href="main.html" title="Về trang chủ">
+                            <div class="logo-image">
+                                <img src="./images/logo/logodn.png" alt="Logo Shop">
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li class="category-dropdown-wrapper">
+                            <a class="flex items-center gap-[4px]" href="#">
+                                <span
+                                    class="inline-flex items-center justify-center w-[32px] h-[32px] bg-[#E8F7FF] rounded-full min-[1620px]:w-[36px] min-[1620px]:h-[36px]">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                                Danh mục sản phẩm
+                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="pc-gaming.html"><i class="fa-solid fa-gamepad"></i> PC Gaming</a></li>
+                                <li><a href="pc-vanphong.html"><i class="fa-solid fa-briefcase"></i> PC Văn Phòng</a>
+                                </li>
+                                <li><a href="linh_kien.html"><i class="fa-solid fa-microchip"></i> Linh Kiện</a></li>
+                                <li><a href="phu-kien.html"><i class="fa-solid fa-headphones"></i> Phụ Kiện</a></li>
+                            </ul>
+
+                        <li>
+                            <a class="flex items-center gap-[4px]" href="build-pc.html">
+                                <span
+                                    class="inline-flex items-center justify-center w-[32px] h-[32px] bg-[#E8F7FF] rounded-full min-[1620px]:w-[36px] min-[1620px]:h-[36px]">
+                                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                                </span>
+                                Build PC
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="flex items-center gap-[4px]" href="dichvu.html">
+                                <span
+                                    class="inline-flex items-center justify-center w-[32px] h-[32px] bg-[#E8F7FF] rounded-full min-[1620px]:w-[36px] min-[1620px]:h-[36px]">
+                                    <i class="fa-solid fa-tag"></i>
+                                </span>
+                                Dịch vụ của shop
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-center">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                        <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+                <div class="header-right">
+                    <div class="icons">
+                        <a href="thongbao.html" title="Thông báo" class="notification-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path
+                                    d="M12 22a2 2 0 0 0 2-2H10a2 2 0 0 0 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4a1.5 1.5 0 0 0-3 0v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" />
+                            </svg>
+                            <span class="notification-badge">3</span>
+                        </a>
+
+                        <a href="giohang.html" title="Giỏ hàng">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path
+                                    d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm7 17H5V8h14v12zm-7-8c-1.66 0-3-1.34-3-3H7c0 2.76 2.24 5 5 5s5-2.24 5-5h-2c0 1.66-1.34 3-3 3z" />
+                            </svg>
+                        </a>
+
+                        <a href="dangnhap.html" title="Tài khoản" id="btn-login">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                            </svg>
+                        </a>
+
+                        <a href="#" title="Đăng xuất" id="btn-logout" class="hidden">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path
+                                    d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z" />
+                            </svg>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<div class="account-container">
+    <aside class="account-sidebar">
+        <div class="user-profile">
+            <div class="avatar-circle">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="user-name">
+                <p>Tài khoản của</p>
+                <strong>NGUYỄN XUÂN PHÁT</strong> </div>
+        </div>
+        <ul class="account-menu">
+            <li><a href="#" class="active" data-tab="tab-info"><i class="fa-regular fa-address-card"></i> Thông tin tài khoản</a></li>
+            <li><a href="#" data-tab="tab-addresses"><i class="fa-solid fa-location-dot"></i> Sổ địa chỉ (Giao hàng)</a></li>
+            <li><a href="#" data-tab="tab-orders"><i class="fa-solid fa-clipboard-list"></i> Đơn hàng của tôi</a></li>
+            <li><a href="#" data-tab="tab-password"><i class="fa-solid fa-lock"></i> Thay đổi mật khẩu</a></li>
+            <li><a href="#" id="btn-logout"><i class="fa-solid fa-power-off"></i> Đăng xuất</a></li>
+        </ul>
+    </aside>
+
+    <main class="account-content">
+        
+        <div id="tab-info" class="tab-pane active">
+            <h2 class="tab-title">Cập nhật thông tin tài khoản</h2>
+            <form class="custom-form">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Họ và tên</label>
+                        <input type="text" value="NGUYỄN XUÂN PHÁT">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Email</label>
+                        <input type="email" value="0023411063@student.dthu.edu.vn">
+                    </div>
+                    <div class="form-group">
+                        <label>Điện thoại cố định</label>
+                        <input type="tel" value="0338635222">
+                    </div>
+                    <div class="form-group">
+                        <label>Điện thoại di động</label>
+                        <input type="tel" value="0338635222">
+                    </div>
+                </div>
+                <button type="button" class="btn-primary">THAY ĐỔI</button>
+            </form>
+        </div>
+
+        <div id="tab-addresses" class="tab-pane">
+            <h2 class="tab-title">Sổ địa chỉ</h2>
+            <p class="sub-text">Quản lý thông tin nhận hàng của bạn để thanh toán nhanh hơn.</p>
+            <div class="address-list">
+                <div class="address-item active">
+                    <div class="address-info">
+                        <strong>Nguyễn Xuân Phát (Mặc định)</strong>
+                        <p>Số 123 Đường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
+                        <p>Điện thoại: 0338635222</p>
+                    </div>
+                    <div class="address-actions">
+                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                        <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
+                </div>
+                <button type="button" class="btn-secondary">THÊM ĐỊA CHỈ MỚI</button>
+            </div>
+        </div>
+
+        <div id="tab-orders" class="tab-pane">
+            <h2 class="tab-title">Đơn hàng của tôi</h2>
+            <div class="table-responsive">
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>Mã đơn hàng</th>
+                            <th>Ngày mua</th>
+                            <th>Sản phẩm</th>
+                            <th>Tổng tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="order-meta">
+                                <strong>#1756483731</strong>
+                                <a href="#" class="view-detail">(Xem chi tiết)</a>
+                            </td>
+                            <td class="order-date">20-03-2026</td>
+                            <td class="order-product">
+                                - PC TTG GAMING i5 12400F - RTX 3050 8GB...
+                            </td>
+                            <td class="order-price">18.380.000 ₫</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="tab-password" class="tab-pane">
+            <h2 class="tab-title">Thay đổi mật khẩu</h2>
+            <form class="custom-form">
+                <div class="form-group">
+                    <label>Mật khẩu cũ</label>
+                    <input type="password" placeholder="Nhập mật khẩu cũ">
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu mới</label>
+                    <input type="password" placeholder="Nhập mật khẩu mới">
+                </div>
+                <div class="form-group">
+                    <label>Nhập lại mật khẩu mới</label>
+                    <input type="password" placeholder="Nhập lại mật khẩu mới">
+                </div>
+                <button type="button" class="btn-primary">CẬP NHẬT MẬT KHẨU</button>
+            </form>
+        </div>
+
+    </main>
+</div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+
+                    <div class="footer-col">
+                        <img src="./images/logo/logodn.png" alt="Logo Footer" class="footer-logo">
+
+                        <p class="company-desc">
+                            T-REX PC - Chuyên cung cấp PC Gaming,
+                            <br>Đồ Họa, Văn Phòng chính hãng giá tốt nhất.
+                        </p>
+                        <div class="contact-info">
+                            <p><i class="fa-solid fa-location-dot"></i> 123 Đường ABC, Quận X, TP.HCM</p>
+                            <p><i class="fa-solid fa-phone"></i> 1900 1234</p>
+                            <p><i class="fa-solid fa-envelope"></i> contact@trexpc.com</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3>Chính sách</h3>
+                        <ul>
+                            <li><a href="chinh-sach-bao-hanh.html">Chính sách bảo hành</a></li>
+
+                            <li><a href="chinh-sach-doi-tra.html">Chính sách đổi trả</a></li>
+
+                            <li><a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a></li>
+
+                            <li><a href="van-chuyen.html">Vận chuyển & Giao hàng</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3>Hỗ trợ khách hàng</h3>
+                        <ul>
+                            <li><a href="huong-dan-mua-hang.html">Hướng dẫn mua hàng</a></li>
+
+                            <li><a href="tra-cuu-don-hang.html">Tra cứu đơn hàng</a></li>
+
+                            <li><a href="quy-dinh-thanh-toan.html">Quy định thanh toán</a></li>
+
+                            <li><a href="gui-yeu-cau-ho-tro.html">Gửi yêu cầu hỗ trợ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <div class="social-links">
+                            <a href="#" style="background: #3b5998;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" style="background: #ff0000;"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" style="background: #000;"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                        <div class="certification">
+                            <p>Chứng nhận:</p>
+                            <img src="./images/bocongthuong.png" alt="Bộ công thương" width="120">
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 T-REX PC. All rights reserved.</p>
+                    </div>
+                </div>
+        </footer>
+
+
+</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Tìm các đường link trong menu và các tab nội dung
+    const menuLinks = document.querySelectorAll('.account-menu a[data-tab]');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    // Bắt sự kiện khi click vào một mục menu
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Ngăn trang bị load lại
+            
+            // 1. XỬ LÝ CSS MENU TRÁI
+            // Bỏ class 'active' của tất cả các menu cũ
+            menuLinks.forEach(item => item.classList.remove('active'));
+            // Thêm class 'active' cho menu vừa click
+            this.classList.add('active');
+
+            // 2. XỬ LÝ NỘI DUNG PHẢI
+            // Ẩn tất cả các khối nội dung cũ
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+            // Hiện khối nội dung tương ứng với menu vừa click (dựa trên data-tab)
+            const targetTab = this.getAttribute('data-tab');
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
+});
+</script>
+
+
+</body>
+
+</html>
