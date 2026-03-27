@@ -3341,6 +3341,7 @@ header {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05); /* Viền bóng nhẹ cho giống ảnh */
+    font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .faq-container {
@@ -3507,7 +3508,7 @@ header {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     font-weight: 600;
-    -moz-appearance: textfield; /* Ẩn mũi tên mặc định của input number */
+
 }
 
 .qty-input::-webkit-outer-spin-button,
@@ -3707,7 +3708,6 @@ textarea.form-control {
 }
 
 .section-title::after {
-    content: '\f107'; /* Icon mũi tên xuống */
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     margin-left: auto;
@@ -3860,4 +3860,26 @@ textarea.form-control {
     .checkout-right {
         width: 100%;
     }
+}
+/* Viết liền nhau để chỉ định đúng thẻ H2 đang có cả 2 class */
+.section-title.text-orange {
+    color: #ff6600 !important; /* Màu cam đặc trưng Gaming, dùng !important để đè màu đỏ cũ nếu cần */
+    font-size: 28px;           /* Tăng kích thước chữ to hơn */
+    font-weight: 800;           /* Làm chữ dày hơn nữa cho ngầu */
+    text-transform: uppercase;  /* Viết hoa toàn bộ cho mạnh mẽ */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Chỉnh luôn màu cho icon ngọn lửa đi kèm cho đồng bộ */
+.section-title.text-orange i {
+    color: #ff4500; 
+    font-size: 24px;
+}
+.section-title.text-orange {
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.1);
+    border-left: 5px solid #ff6600; 
+    padding-left: 30px;
 }

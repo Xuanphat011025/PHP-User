@@ -1,13 +1,13 @@
 // File: jvc-dn.js
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Tìm các nút bấm trên giao diện
     const btnLogin = document.getElementById('btn-login');
     const btnLogout = document.getElementById('btn-logout');
 
     // Nếu trang hiện tại có chứa Header này thì mới chạy code
     if (btnLogin && btnLogout) {
-        
+
         // Kiểm tra xem trình duyệt đã lưu trạng thái đăng nhập chưa
         let isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
@@ -24,18 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Bắt sự kiện khi bấm vào nút Đăng xuất
-        btnLogout.addEventListener('click', function(e) {
-            e.preventDefault(); 
+        btnLogout.addEventListener('click', function (e) {
+            e.preventDefault();
             alert('Bạn đã đăng xuất thành công!');
-            
+
             // Xóa trạng thái đăng nhập
-            localStorage.setItem('isLoggedIn', 'false'); 
-            
+            localStorage.setItem('isLoggedIn', 'false');
+
             // Nếu đang ở trang thongtin.html mà đăng xuất thì đá văng về trang chủ
-            if (window.location.pathname.includes('main.html')) {
-                window.location.href = 'main.html';
+            if (window.location.pathname.includes('thongtinkh.html')) {
+                window.location.href = 'main.html'; // Đang xem thông tin cá nhân mà đăng xuất thì đá về trang chủ
             } else {
-                window.location.reload(); // Còn ở trang khác thì chỉ cần tải lại trang
+                window.location.reload(); // Còn ở các trang mua sắm khác thì chỉ cần tải lại trang để nó ẩn nút đăng xuất đi
             }
         });
     }
