@@ -40,3 +40,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+// Xử lý sự kiện bấm nút Thêm vào giỏ
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Tìm TẤT CẢ các nút có class btn-icon-add trên trang
+    const btnsAddCart = document.querySelectorAll('.btn-icon-add');
+    // 2. Tìm cái khung thông báo
+    const toastCart = document.getElementById('toast-cart');
+
+    // Nếu có nút thêm giỏ hàng thì mới chạy code
+    if (btnsAddCart.length > 0 && toastCart) {
+        
+        // 3. Gắn sự kiện Click cho từng nút
+        btnsAddCart.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault(); // Ngăn trang bị giật tung lên đầu
+                
+                // Hiện thông báo lên bằng cách thêm class show-toast
+                toastCart.classList.add('show-toast');
+
+                // Tự động ẩn đi sau 2.5 giây
+                setTimeout(function() {
+                    toastCart.classList.remove('show-toast');
+                }, 2500); 
+            });
+        });
+    }
+});
